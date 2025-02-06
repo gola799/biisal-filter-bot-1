@@ -13,16 +13,16 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', '25471015'))
-API_HASH = environ.get('API_HASH', '0ab2955ad5b1a913e220800b5fc5db36')
-BOT_TOKEN = environ.get('BOT_TOKEN', '8187756501:AAEOAa1-XNf1niwMjk32AxnlmPyxeDGyiaM')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5492204858').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/Junglekirani")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002412441178'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/moviesearchgroup25')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002479481836').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://gandudotcom9955:8iZNxeXulrx9qly4@cluster0.66uej.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "")
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
